@@ -83,6 +83,7 @@ h2.title{
 
 .promo .promo_btn{
     display: block;
+    border: none;
     margin: 73px auto;
     width: 313px;
     height: 72px;
@@ -124,13 +125,22 @@ h2.title{
     padding: 85px 0 75px 0;
 }
 
-.intensive .intensive_title{
+.intensive .intensive_title, .finish .finish_title{
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     color: #252525;
+}
+
+.intensive .intensive_divider, .finish .finish_divider{
+    width: 220px;
+    height: 7px;
+    margin: 0 auto;
+    margin-top: 18px;
+    background: #F9BF3B;
+    border: none;
 }
 
 .intensive .intensive_text{
@@ -205,22 +215,26 @@ h2.title{
 
 .finish{
     background-image: url(/Projects/Site_1/img/second_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 447px;
     padding: 86px 0 68.5px 0;
 }
 
-.finish .finish_title{  
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #EFEFEF;
-}
-
 .finish .finish_wrapper{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
     padding-top: 39px;
 }
+
+.finish .finish_title{
+    color: #FFFFFF
+}
+
+.finish .finish_text{
+    min-height: 234px;
+}
+
