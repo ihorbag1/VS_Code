@@ -81,7 +81,7 @@ h2.title{
     color: #F9BF3B;
 }
 
-.promo .promo_btn{
+.promo .promo_btn, .gift .gift_btn{
     display: block;
     border: none;
     margin: 73px auto;
@@ -215,26 +215,108 @@ h2.title{
 
 .finish{
     background-image: url(/Projects/Site_1/img/second_bg.png);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 447px;
-    padding: 86px 0 68.5px 0;
+    padding: 86px 0 79px 0;
 }
 
 .finish .finish_wrapper{
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: space-between;
-    padding-top: 39px;
+    margin-top: 41px;
+}
+
+.finish .finish_wrapper .finish_wrapper_item{
+    width: 204px;
+}
+
+.finish .finish_wrapper .finish_wrapper_item .finish_wrapper_round{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 118px;
+    height: 118px;
+    border-radius: 100%;
+    background: #B4E2FF;
 }
 
 .finish .finish_title{
     color: #FFFFFF
 }
 
-.finish .finish_text{
-    min-height: 234px;
+.finish .finish_wrapper .finish_wrapper_item .finish_wrapper_text{
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: #EFEFEF;
 }
 
+.gift{
+    min-height: 628px;
+    padding: 86px 0 87px 0;
+    background: #EFEFEF;
+}
+
+.gift .gift_img{
+    display: block;
+    margin: 0 auto;
+}
+
+.gift .gift_text{
+    margin-top: 45px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #252525;
+}
+
+.first{
+    min-height: 433px;
+    padding-top: 81px;
+}
+
+.first .first_img{
+    display: block;
+    margin: 0 auto;
+}
+
+.first .first_title{
+    margin-top: 36px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.first .first_time{
+    margin-top: 30px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+}
+
+.first .first_text{
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #4A4A4A;
+}
