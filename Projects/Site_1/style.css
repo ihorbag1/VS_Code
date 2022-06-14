@@ -313,10 +313,33 @@ h2.title{
 
 .first .first_text{
     margin-top: 25px;
+    margin-bottom: 53px;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 23px;
     line-height: 20px;
     text-align: center;
     color: #4A4A4A;
+}
+
+footer{
+    min-height: 169px;
+    padding: 61px 0 69px 0;
+    background: #1A1A1A;
+}
+
+footer .footer_info{
+    margin: 0 auto;
+    width: 377px;
+    text-align: center;
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.footer_info a{
+    text-decoration-line: underline;
+    color: #888888;
 }
