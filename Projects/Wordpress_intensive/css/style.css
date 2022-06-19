@@ -12,7 +12,7 @@
 
 .promo{
     height: 800px;
-    background-image: url('/Projects/Site_1/img/main_bg.png');
+    background-image: url('/Projects/Wordpress_intensive/img/main_bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -214,7 +214,7 @@ h2.title{
 }
 
 .finish{
-    background-image: url(/Projects/Site_1/img/second_bg.png);
+    background-image: url(/Projects/Wordpress_intensive/img/second_bg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
