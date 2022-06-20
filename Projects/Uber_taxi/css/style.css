@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    min-height: 50px;
+    background: #212121;
+}
+
+.menu{
+    padding: 13px 70px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.menu .menu_item{
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.menu .menu_item .menu_link{
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
