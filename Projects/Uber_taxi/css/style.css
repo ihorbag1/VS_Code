@@ -147,7 +147,7 @@ header{
     color: #FFFFFF;
 }
 
-.work h2{
+.work .title{
     margin-bottom: 0;
     margin-top: 33px;
     font-weight: 700;
@@ -158,6 +158,7 @@ header{
 }
 
 .work_item{
+    min-height: 200px;
     margin-top: 16px;
     display: flex;
     justify-content: center;
@@ -176,12 +177,10 @@ header{
 }
 
 .work_descr{
-    min-height: 200px;
     width: 372px;
 }
 
 .work .work_title{
-    min-height: 42px;
     font-weight: 400;
     font-size: 17px;
     line-height: 21px;
@@ -190,7 +189,6 @@ header{
 }
 
 .work .work_text{
-    min-height: 150px;
     font-weight: 300;
     font-size: 15px;
     line-height: 21px;
