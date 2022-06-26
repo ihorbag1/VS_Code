@@ -1,59 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+* {
+  font-family: "Roboto", sans-serif; }
 
-*{
-    font-family: 'Roboto', sans-serif;
-}
+header {
+  position: relative;
+  min-height: 50px;
+  background: #212121; }
 
-header{
-    position: relative;
-    min-height: 50px;
-    background: #212121;
-}
-
-.menu{
-    margin-bottom: 0;
-    padding: 13px 70px;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-.menu .menu_item{
+.menu {
+  margin-bottom: 0;
+  padding: 13px 70px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none; }
+  .menu .menu_item {
     border-right: 2px dotted black;
-    padding-right: 28px;
-}
+    padding-right: 28px; }
+    .menu .menu_item .menu_link {
+      font-weight: 300;
+      font-size: 15px;
+      text-align: center;
+      color: #FFFFFF;
+      text-decoration: none; }
 
-.menu .menu_item .menu_link{
-    font-weight: 300;
-    font-size: 15px;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.subheader{
-    position: absolute;
-    width: 100%;
-    min-height: 87px;
-    padding: 21px 0 19px 0;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.subheader .logo_text{
+.subheader {
+  position: absolute;
+  width: 100%;
+  min-height: 87px;
+  padding: 21px 0 19px 0;
+  background: rgba(0, 0, 0, 0.6); }
+  .subheader .logo_text {
     margin-top: 5px;
     font-weight: 100;
     font-size: 13px;
-    color: #FFFFFF;
-}
-
-.subheader .phone_text{
+    color: #FFFFFF; }
+  .subheader .phone_text {
     font-weight: 300;
     font-size: 12px;
     text-align: right;
-    color: #FFFFFF;
-}
-
-.subheader .phone{
+    color: #FFFFFF; }
+  .subheader .phone {
     display: block;
     margin-left: 8px;
     font-weight: 400;
@@ -62,10 +48,8 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     line-height: 39px;
-    color: #FFFFFF;
-}
-
-.subheader .subheader_btn{
+    color: #FFFFFF; }
+  .subheader .subheader_btn {
     width: 162px;
     min-height: 57px;
     background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
@@ -76,43 +60,34 @@ header{
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-}
+    color: #FFFFFF; }
 
-.promo{
-    padding: 150px 0 185px 0;
-    min-height: 799px;
-    background: url(/Projects/Uber_taxi/img/uber_bg.png) center center/cover no-repeat;
-}
-
-.promo h1{
+.promo {
+  padding: 150px 0 185px 0;
+  min-height: 799px;
+  background: url(/Projects/Uber_taxi/img/uber_bg.png) center center/cover no-repeat; }
+  .promo h1 {
     font-weight: 900;
     font-size: 60px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.promo h2{
+    color: #FFFFFF; }
+  .promo h2 {
     margin-top: 22px;
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.promo .promo_description{
+    color: #FFFFFF; }
+  .promo .promo_description {
     margin-top: 23px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
-}
-
-.promo .promo_btn{
+    color: #FFFFFF; }
+  .promo .promo_btn {
     display: block;
     margin: 116px auto 0 auto;
     width: 259px;
@@ -126,72 +101,115 @@ header{
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-}
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21); }
 
-.work{
-    padding: 77px 0 64px 0;
-}
-
-.work .label{
+.work {
+  padding: 77px 0 64px 0; }
+  .work .label {
     margin: 0 auto;
     padding: 5px 12px;
     width: 115px;
     min-height: 27px;
     background: #000000;
-
     font-weight: 400;
     font-size: 11px;
     text-transform: uppercase;
     text-align: center;
-    color: #FFFFFF;
-}
-
-.work .title{
+    color: #FFFFFF; }
+  .work .title {
     margin-bottom: 0;
     margin-top: 33px;
     font-weight: 700;
     font-size: 38px;
     text-align: center;
     text-transform: uppercase;
-    color: #222222;
-}
+    color: #222222; }
 
-.work_item{
-    min-height: 200px;
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.work_item {
+  min-height: 200px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.work .work_ellips{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 25px;
-    width: 116px;
-    height: 116px;
-    background: #1EACC7;
-    border-radius: 100%;
-}
+.work .work_ellips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  width: 116px;
+  height: 116px;
+  background: #1EACC7;
+  border-radius: 100%; }
 
-.work_descr{
-    width: 372px;
-}
+.work_descr {
+  width: 372px; }
 
-.work .work_title{
+.work .work_title {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  align-items: center;
+  color: #1EACC7; }
+.work .work_text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  align-items: center;
+  color: #202020; }
+
+.mobile {
+  padding: 46px 0 80px 0;
+  min-height: 864px;
+  background: url(/Projects/Uber_taxi/img/mobile_bg.png) center center/cover no-repeat; }
+  .mobile .label {
+    margin: 0 auto;
+    padding: 5px 12px;
+    width: 115px;
+    min-height: 27px;
+    background: #000000;
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF; }
+  .mobile .title {
+    margin-bottom: 0;
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222; }
+  .mobile .subtitle {
     font-weight: 400;
     font-size: 17px;
     line-height: 21px;
-    align-items: center;
-    color: #1EACC7;
-}
+    text-align: center;
+    color: #222222; }
+  .mobile_item_1 {
+    width: 320px;
+    height: 280px;
+    background: url("...imgmobile_card_1.png") center center/cover no-repeat; }
+  .mobile_item_2 {
+    width: 320px;
+    height: 280px;
+    background: url("...imgmobile_card_2.png") center center/cover no-repeat; }
+  .mobile_item_3 {
+    width: 320px;
+    height: 280px;
+    background: url("...imgmobile_card_3.png") center center/cover no-repeat; }
+  .mobile_item_4 {
+    width: 320px;
+    height: 280px;
+    background: url("...imgmobile_card_4.png") center center/cover no-repeat; }
+  .mobile_item_5 {
+    width: 320px;
+    height: 280px;
+    background: url("...imgmobile_card_5.png") center center/cover no-repeat; }
+  .mobile_item_6 {
+    width: 320px;
+    height: 280px;
+    background: url("...imgmobile_card_6.png") center center/cover no-repeat; }
 
-.work .work_text{
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 21px;
-    align-items: center;
-    color: #202020;
-}
+/*# sourceMappingURL=style.css.map */
