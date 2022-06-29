@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap')
 
+$blue_color: #1CA8C3
+$red_color: #FF5656
+
+@mixin hover_btn
+  &:hover
+    background-image: none
+    background-color: $blue_color
+
 @mixin size_mobile_item
   position: relative
   width: 320px 
@@ -84,6 +92,7 @@ header
     text-align: center
     text-transform: uppercase
     color: #FFFFFF
+    @include hover_btn
 
 .promo
   padding: 150px 0 185px 0
@@ -128,7 +137,7 @@ header
     text-align: center
     text-transform: uppercase
     color: #FFFFFF
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    @include hover_btn
 
 .work
   padding: 77px 0 64px 0
@@ -334,3 +343,68 @@ header
     text-align: center
     color: #222222
     
+.require
+  padding: 68px 0 54px 0
+  .label
+    margin: 0 auto
+    padding: 5px 12px
+    width: 115px
+    min-height: 27px
+    background: #000000
+    font-weight: 400
+    font-size: 11px
+    text-transform: uppercase
+    text-align: center
+    color: #FFFFFF
+  .title
+    margin-bottom: 0
+    margin-top: 33px
+    font-weight: 700
+    font-size: 38px
+    text-align: center
+    text-transform: uppercase
+    color: #222222
+  &_item
+    margin: 33px 0
+    &_title 
+      font-weight: 400
+      font-size: 22px
+      line-height: 24px
+      color: $blue_color
+      &_red
+        color: $red_color
+    &_ul
+      margin-top: 22px 
+      padding-left: 50px 
+      list-style-type: none
+    &_li
+      position: relative
+      margin-bottom: 10px
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: #222222
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        left: -30px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url(/Projects/Uber_taxi/img/check_blue.png) center (center / cover) no-repeat
+      &_red
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          left: -30px
+          top: 3px
+          width: 21px
+          height: 20px
+          background: url(/Projects/Uber_taxi/img/check_red.png) center (center / cover) no-repeat
+    &_text
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: $blue_color
