@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap')
+    
+$background-color:#24252D
+$text-color-white:#FFFFFF
+
+@mixin button-violet
+    width: 119px
+    height: 40px
+    background: linear-gradient(135deg, #FF00B8 7.81%, #FF005C 100%)
+    border-radius: 10px
+    border: none
+    font-weight: 700
+    font-size: 16px
+    color: $text-color-white
+    transition: 0.3s all
+@mixin button-black
+    width: 145px
+    height: 40px
+    margin-left: 12px
+    background: $background-color
+    border-radius: 10px
+    border-color: #FF005C
+    font-weight: 700
+    font-size: 16px
+    color: #FF005C
+    transition: 0.3s all
+@mixin hover-button-violet
+    background: #fff
+    color: #ff0067
+@mixin hover-button-black
+    background: #fff
+    border: none
+    
+*
+    font-family: 'Raleway', sans-serif
+
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 92px
+    padding: 30px 55px 22px 55px
+    background: $background-color
+    border-bottom: 1px solid #323238
+    .logo
+        display: flex
+        align-items: center
+        &_text
+            font-weight: 900
+            font-size: 18px
+            line-height: 21px
+            color: $text-color-white
+            text-decoration: none
+            cursor: pointer
+            margin: 0 31px 0 20px
+    .search
+        &_bar
+            display: flex
+            align-items: center
+            padding: 10.5px 18px
+            width: 550px
+            height: 40px
+            background: #1B1A21
+            border: none
+            border-radius: 10px
+            img
+                width: 20px
+                height: 20px
+            input
+                width: 100%
+                margin-left: 21.5px
+                background: transparent
+                border: none
+                outline: none
+                font-weight: 400
+                font-size: 14px
+                color: $text-color-white
+                &::placeholder
+                    font-weight: 400
+                    font-size: 14px
+                    color: $text-color-white
+    nav
+        .menu
+            margin: 0
+            padding: 0
+            display: flex
+            justify-content: space-between
+            list-style: none
+            a
+                margin-left: 39px
+                font-weight: 700
+                text-decoration: none
+                text-align: center
+                font-size: 16px
+                color: #737373
+                &:hover
+                    color: $text-color-white
+    .account
+        margin-left: 29px
+        .create
+            @include button-violet
+            &:hover
+                @include hover-button-violet
+        .connect   
+            @include button-black
+            &:hover
+                @include hover-button-black
+
+.intro
+    position: relative
+    padding-top: 105px
+    padding-bottom: 52.5px
+    min-height: 643px
+    background: $background-color
+    &_text
+        position: relative
+        padding-top: 81px
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 710px
+            width: 615px
+            height: 716px
+            background: url('../img/intro_img.png') no-repeat
+        &_title
+            width: 663px
+            min-height: 169px
+            font-family: 'Poppins', 'Raleway', sans-serif
+            font-weight: 700
+            font-size: 48px
+            line-height: 82px
+            background: linear-gradient(93.8deg, #FF00AE 1.02%, #FF0066 92.85%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+        &_descr
+            width: 521px
+            min-height: 98px
+            margin-top: 35px
+            font-family: 'Poppins', 'Raleway', sans-serif
+            font-weight: 500
+            font-size: 18px
+            line-height: 26px
+            color: $text-color-white
+        &_buttons
+            margin-top: 64px
+            .explore  
+                @include button-violet
+                width: 173px
+                height: 52px
+                &:hover
+                    @include hover-button-violet
+            .create
+                @include button-black
+                width: 165px
+                height: 52px
+                &:hover
+                    @include hover-button-black
+        &_learn-more
+            padding-top: 82px
+            margin-left: 100px
+            position: relative
+            a
+                font-weight: 500
+                font-size: 18px
+                color: $text-color-white
+                text-decoration: none
+                &:hover
+                    text-decoration: underline
+            &::before
+                content: ''
+                position: absolute
+                top: 65px
+                left: -90px                
+                width: 68px
+                height: 68px
+                background: url('../icon/learn_more_polygon.svg') center (center / cover) no-repeat
+
+.top-sellers
+    padding-top: 52.5px
+    min-height: 451px       
+    background: $background-color             
