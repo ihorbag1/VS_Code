@@ -35,6 +35,9 @@ $text-color-white:#FFFFFF
 *
     font-family: 'Raleway', sans-serif
 
+body
+    background: $background-color
+
 header
     display: flex
     justify-content: space-between
@@ -108,9 +111,8 @@ header
                 @include hover-button-black
 
 .intro
-    position: relative
-    padding-top: 105px
-    padding-bottom: 52.5px
+    margin-top: 105px
+    margin-bottom: 52.5px
     min-height: 643px
     background: $background-color
     &_text
@@ -180,6 +182,189 @@ header
                 background: url('../icon/learn_more_polygon.svg') center (center / cover) no-repeat
 
 .top-sellers
-    padding-top: 52.5px
+    margin: 52.5px 0
     min-height: 451px       
-    background: $background-color             
+    background: $background-color
+    text-align: center
+    &_title
+        font-weight: 800
+        font-size: 36px
+        background: linear-gradient(135deg, #FF00B8 7.81%, #FF005C 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent 
+    &_desc
+        margin: 20px auto 0 auto
+        width: 518px
+        height: 60px
+        font-weight: 500
+        font-size: 18px
+        line-height: 30px
+        text-align: center
+        color: $text-color-white 
+    &_cards
+        margin-top: 49px
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        &_item
+            position: relative
+            padding: 20px 16px 43px 16px
+            width: 213px
+            height: 280px
+            background: #202128
+            border-radius: 20px
+            &_number
+                position: absolute
+                padding: 11px
+                width: 41px
+                height: 41px
+                line-height: 15px
+                background: linear-gradient(135deg, #FF00B8 7.81%, #FF005C 100%)
+                border-radius: 10px
+                font-weight: 800
+                font-size: 16px
+                color: $text-color-white
+            &_img
+                position: relative
+                margin-top: 37px
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 70px
+                    left: 110px
+                    width: 25px
+                    height: 25px
+                    background: url('../icon/check_icon.svg') center (center / cover) no-repeat
+            &_name
+                margin-top: 32px
+                font-weight: 800
+                font-size: 18px
+                text-align: center
+                color: $text-color-white
+            &_total
+                font-weight: 500
+                font-size: 18px
+                text-align: center
+                color: $text-color-white
+.hot-bids
+    margin: 52.5px 0
+    height: 1211px
+    background: $background-color
+    &_title
+        font-weight: 800
+        font-size: 36px
+        text-align: center
+        background: linear-gradient(135deg, #FF00B8 7.81%, #FF005C 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+    &_desc
+        margin: 20px auto 0 auto 
+        width: 634px
+        height: 60px
+        font-weight: 500
+        font-size: 18px
+        text-align: center
+        color: $text-color-white
+    &_cards
+        margin-top: 20px
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        &_item
+            margin-top: 47px
+            padding: 23.5px 20.6px 43px
+            width: 275px
+            height: 428px
+            border-radius: 40px
+            background: #202128
+            img
+                border-radius: 30px
+            &_title
+                margin-top: 21.6px
+                font-weight: 700
+                font-size: 18px
+                color: $text-color-white
+            &_desc
+                margin-top: 10px
+                font-weight: 500
+                font-size: 18px
+                color: $text-color-white
+    &_learn-more
+        @include button-black
+        display: block
+        margin: 67px auto 0 auto
+        width: 358px
+        height: 52px
+        &:hover
+            @include hover-button-black
+            
+footer
+    margin: 52.5px 0 30px 0
+    padding-top: 53px
+    height: 374px
+    border-top: 1px solid #323238
+    background: $background-color
+    .logo
+        display: flex
+        align-items: center
+        &_text
+            font-weight: 900
+            font-size: 18px
+            line-height: 21px
+            color: $text-color-white
+            margin-left: 20px 
+    .email
+        margin-top: 42px
+        &_text
+            font-family: 'Poppins'
+            font-weight: 600
+            font-size: 16px
+            color: $text-color-white
+        &_input
+            margin-top: 25px
+            display: flex
+            align-items: center
+            &_bar
+                width: 228px
+                height: 40px
+                background: #1B1A21
+                border: none
+                border-radius: 10px
+                input
+                    padding: 12.5px 0 12.5px 18px
+                    width: 100%
+                    background: transparent
+                    border: none
+                    outline: none
+                    font-weight: 400
+                    font-size: 14px
+                    color: $text-color-white
+                    &::placeholder
+                        font-family: 'Poppins'
+                        font-weight: 400
+                        font-size: 14px
+                        color: $text-color-white
+            &_button
+                @include button-violet
+                &:hover
+                    @include hover-button-violet
+    .about
+        display: flex
+        &_section
+            &_title
+                font-family: 'Poppins'
+                font-weight: 600
+                font-size: 20px
+                color: $text-color-white
+    .rights
+        margin-top: 133px
+        font-family: 'Poppins'
+        font-weight: 600
+        font-size: 16px
+        color: $text-color-white
