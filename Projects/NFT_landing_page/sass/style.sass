@@ -182,7 +182,7 @@ header
                 background: url('../icon/learn_more_polygon.svg') center (center / cover) no-repeat
 
 .top-sellers
-    margin: 52.5px 0
+    margin-top: 105px
     min-height: 451px       
     background: $background-color
     text-align: center
@@ -250,7 +250,7 @@ header
                 text-align: center
                 color: $text-color-white
 .hot-bids
-    margin: 52.5px 0
+    margin: 105px 0
     height: 1211px
     background: $background-color
     &_title
@@ -305,66 +305,90 @@ header
             @include hover-button-black
             
 footer
-    margin: 52.5px 0 30px 0
-    padding-top: 53px
-    height: 374px
+    padding: 53px 0 30px 0
+    height: 405px
     border-top: 1px solid #323238
     background: $background-color
-    .logo
+    .footer_flex_top
         display: flex
-        align-items: center
-        &_text
-            font-weight: 900
-            font-size: 18px
-            line-height: 21px
-            color: $text-color-white
-            margin-left: 20px 
-    .email
-        margin-top: 42px
-        &_text
+        .logo
+            display: flex
+            align-items: center
+            &_text
+                font-weight: 900
+                font-size: 18px
+                line-height: 21px
+                color: $text-color-white
+                margin-left: 20px 
+        .email
+            margin-top: 42px
+            &_text
+                font-family: 'Poppins'
+                font-weight: 600
+                font-size: 16px
+                color: $text-color-white
+            &_input
+                margin-top: 25px
+                display: flex
+                align-items: center
+                &_bar
+                    width: 228px
+                    height: 40px
+                    background: #1B1A21
+                    border: none
+                    border-radius: 10px
+                    input
+                        padding: 12.5px 0 12.5px 18px
+                        width: 100%
+                        background: transparent
+                        border: none
+                        outline: none
+                        font-weight: 400
+                        font-size: 14px
+                        color: $text-color-white
+                        &::placeholder
+                            font-family: 'Poppins'
+                            font-weight: 400
+                            font-size: 14px
+                            color: $text-color-white
+                &_button
+                    @include button-violet
+                    &:hover
+                        @include hover-button-violet
+        .about
+            display: flex
+            margin-left: 387px
+            &_section_ml
+                margin-left: 104px
+            &_section
+                &_title
+                    padding-bottom: 12px
+                    font-family: 'Poppins'
+                    font-weight: 600
+                    font-size: 20px
+                    color: $text-color-white
+                &_list
+                    padding: 0
+                    margin: 0
+                    li
+                        margin-top: 12px
+                        a
+                            font-family: 'Poppins'
+                            font-weight: 400
+                            font-size: 16px
+                            color: $text-color-white
+                            text-decoration: none
+                            &:hover
+                                color: #737373
+    .footer_flex_bottom
+        display: flex
+        justify-content: space-between
+        margin-top: 102px
+        .rights
             font-family: 'Poppins'
             font-weight: 600
             font-size: 16px
             color: $text-color-white
-        &_input
-            margin-top: 25px
-            display: flex
-            align-items: center
-            &_bar
-                width: 228px
-                height: 40px
-                background: #1B1A21
-                border: none
-                border-radius: 10px
-                input
-                    padding: 12.5px 0 12.5px 18px
-                    width: 100%
-                    background: transparent
-                    border: none
-                    outline: none
-                    font-weight: 400
-                    font-size: 14px
-                    color: $text-color-white
-                    &::placeholder
-                        font-family: 'Poppins'
-                        font-weight: 400
-                        font-size: 14px
-                        color: $text-color-white
-            &_button
-                @include button-violet
-                &:hover
-                    @include hover-button-violet
-    .about
-        display: flex
-        &_section
-            &_title
-                font-family: 'Poppins'
-                font-weight: 600
-                font-size: 20px
-                color: $text-color-white
-    .rights
-        margin-top: 133px
-        font-family: 'Poppins'
-        font-weight: 600
-        font-size: 16px
-        color: $text-color-white
+        .social
+            &_ml
+                margin-left: 22px                
