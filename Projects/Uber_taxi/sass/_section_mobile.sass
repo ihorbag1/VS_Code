@@ -1,0 +1,93 @@
+.mobile
+  padding: 46px 0 80px 0
+  min-height: 864px
+  background: url(/Projects/Uber_taxi/img/mobile_bg.png) center (center / cover) no-repeat
+
+  .label
+    margin: 0 auto
+    padding: 5px 12px
+    width: 115px
+    min-height: 27px
+    background: #000000
+    font-weight: 400
+    font-size: 11px
+    text-transform: uppercase
+    text-align: center
+    color: #FFFFFF
+
+  .title
+    margin-bottom: 0
+    margin-top: 33px
+    font-weight: 700
+    font-size: 38px
+    text-align: center
+    text-transform: uppercase
+    color: #222222
+
+  .subtitle
+    margin-bottom: 30px
+    font-weight: 400
+    font-size: 17px
+    line-height: 21px
+    text-align: center
+    color: #222222
+
+  &_item_1
+    @include size_mobile_item
+    @include mobile_text_style
+    background: url(/Projects/Uber_taxi/img/mobile_card_1.png) center (center / cover) no-repeat
+
+  &_item_2
+    @include size_mobile_item
+    @include mobile_text_style
+    background: url(/Projects/Uber_taxi/img/mobile_card_2.png) center (center / cover) no-repeat
+
+  &_item_3
+    @include size_mobile_item
+    @include mobile_text_style
+    background: url(/Projects/Uber_taxi/img/mobile_card_3.png) center (center / cover) no-repeat
+
+  &_item_4
+    @include size_mobile_item
+    @include mobile_text_style
+    background: url(/Projects/Uber_taxi/img/mobile_card_4.png) center (center / cover) no-repeat
+
+  &_item_5
+    @include size_mobile_item
+    @include mobile_text_style
+    background: url(/Projects/Uber_taxi/img/mobile_card_5.png) center (center / cover) no-repeat
+
+  &_item_6
+    @include size_mobile_item
+    @include mobile_text_style
+    background: url(/Projects/Uber_taxi/img/mobile_card_6.png) center (center / cover) no-repeat
+  
+  &_item_plus
+    position: absolute    
+    bottom: 34px
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 8px
+    width: 29px
+    height: 29px
+    border-radius: 100%
+    background: #000000
+    cursor: pointer
+    &::before
+      content: ''
+      display: block
+      width: 12px
+      height: 2px
+      background-color: $blue_color
+    &::after
+      content: ''
+      display: block
+      width: 2px
+      height: 12px
+      background-color: $blue_color
+      position: absolute
+      left: 50% 
+      transform: translateX(-50%)
